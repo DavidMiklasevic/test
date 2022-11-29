@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Saturnius</title>
+    <link rel="icon" href="./Icon.ico" type="image/x-icon">
+    <style>
+      .site {
+        min-height: 100vh;   
+        gap: 1rem;
+        background-image: linear-gradient(to bottom right,#f9904a,rgb(251, 210, 133,0.5));
+      }
+    </style>
+  </head>
+  <body>
+    <div class="site">
+      <header>
+        <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm align-items-stretch">
+          <div class="container">
+            <a href="index.html" class="navbar-brand">
+              
+              <img src="logoSaturn.png" width="45" alt="" class="d-inline-block align-middle mr-2">
+              
+              <span class="text-uppercase font-weight-bold">Saturnius</span>
+            </a>
+        
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>            
+            <div id="navbarToggleExternalContent" class="collapse navbar-collapse " style="float: right; ">
+              <ul class="navbar-nav ml-auto justify-content-end w-100" >
+                <li class="nav-item "><a href="./index.html" class="nav-link ">Home </a></li>
+                <li class="nav-item"><a href="Catalogue.html" class="nav-link">Catalogue</a></li>
+                <li class="nav-item"><a href="aboutUs.html" class="nav-link">Contact Us</a></li>
+                <li class="nav-item"><a href="SignInPage.html" class="nav-link">Sign In</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <main>
+      <section class="py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="row gx-4 gx-lg-5 align-items-center">
+                <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://m.media-amazon.com/images/I/51vfoiVL2LL._AC_SL1000_.jpg" alt="Telescope" ></div>
+                <div class="col-md-6">
+                    
+                    <h1 class="display-5 fw-bolder">Celestron - 70mm Travel Scope - Portable Refractor Telescope - Fully-Coated Glass Optics - Ideal Telescope for Beginners - BONUS Astronomy Software Package</h1>
+                    <div class="fs-5 mb-5">
+                        <span class="text-decoration-line-through">120&euro;</span>
+                        <span>80&euro;</span>
+                    </div>
+                    <p class="lead">Designed with American innovation for beginner stargazers, the Celestron Travel Scope 70 is a professionally engineered refractor telescope that is perfect for celestial or terrestrial viewing on the go. It’s the perfect telescope for adults and kids to use together with its fully-coated, high-quality glass optics, including a refractor-style 70mm objective lens. The aperture allows high-resolution viewing, without adding a lot of extra weight. Added coating on the 70mm lens allows light to enter, providing sharper, crisper viewing of celestial and terrestrial objects during the day or at night.
+    
+                      The Celestron telescope for beginners is designed with several operating features that make it exceptionally user-friendly. Our precision manufacturing standards and high-quality materials are unmatched in the industry. We’ve included two quality eyepieces (20mm and 10mm) and a star diagonal for crisp low- and high-power viewing during the day or at night, allowing you to enjoy close-ups of wildlife in nature or stargaze with family and friends.
+                      
+                      The Celestron Travel Scope 70 weighs just 3.3 pounds and assembles in seconds with no tools required. It’s easy to use to navigate the sky. When your observing session is over, everything packs up into the handy included traveling backpack.
+                      
+                      Your purchase also entitles you to a FREE download of Celestron’s BONUS Starry Night Astronomy Software with information on thousands of celestial objects, printable sky maps, and more. It’s the best way to learn about the night sky and plan your next observing session.
+                    </p>
+                    <div class="d-flex">
+                        <input class="form-control text-center me-3" id="inputQuantity" type="number" value="1" style="max-width: 3rem" >
+                        <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                            <i class="bi-cart-fill me-1"></i>
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer class="bg-dark text-center text-white">
+      <div class="container p-4 pb-0">
+        <section id="section" class="">
+          <form >
+    
+            <div class="row d-flex justify-content-center">
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
+              </div>
+    
+              <div class="col-md-5 col-12">
+                <div class="form-outline form-white mb-4">
+                  
+                  <input name="input" type="email" oninvalid="AddError()" oninput="removeError()" onsubmit="Msg()" id="form" class="form-control" >
+                  <label class="form-label" for="form">Email address</label>
+                
+                </div>
+              </div>
+    
+              <div class="col-auto">
+                <button class="btn btn-outline-light mb-4">
+                  Subscribe
+                </button>
+                <script>
+                  function removeError(){
+                    document.getElementById("form").classList.remove("error");
+                  };
+                  function AddError(){
+                    document.getElementById("form").classList.add("error");
+                  };
+                </script>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+    
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:
+        <a class="text-white"  href="index.html">Saturnius.com</a>
+      </div>
+    </footer>
+    </div>
+  </body>
+</html>
